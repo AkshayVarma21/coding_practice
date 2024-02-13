@@ -1,0 +1,23 @@
+
+.wrapper{
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.inputType {
+  padding: .5rem;
+  width: 20%;
+}
+
+
+.results-container {
+  background-color: aliceblue;
+  border: solid black 1px;
+  border-top: none;
+  width: 20%;
+  padding: .5em;
+}
