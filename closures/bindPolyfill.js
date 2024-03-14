@@ -14,9 +14,9 @@ Function.prototype.customBind = function(...args){
     const obj = this;
     const params = args.slice(1)
     return function(...args2){
-        obj.call(args[0], [...params,args2])
+        obj.apply(args[0], [...params,...args2])
     }
 }
 
-const printMyName2 = printName.bind(name,"Kochi");
+const printMyName2 = printName.customBind(name,"Kochi");
 printMyName2("Kerala","India");
