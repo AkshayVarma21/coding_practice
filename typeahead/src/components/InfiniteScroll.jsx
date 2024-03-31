@@ -1,4 +1,7 @@
+// Implementation of infinite scroll with debounce logic also
+
 import React, { useState, useEffect } from 'react'
+import useDebounce from '../custom-hooks/useDebounce'
 
 const InfiniteScroll = () => {
     const [listData, setListData] = useState([])
@@ -21,9 +24,9 @@ const InfiniteScroll = () => {
     }
 
     useEffect(() => {
-        window.addEventListener("scroll", onScroll);
+        window.addEventListener("scroll", debouncedScroll);
         return () => {
-            window.removeEventListener("scroll", onScroll);
+            window.removeEventListener("scroll", debouncedScroll);
         };
     }, [])
 
@@ -35,6 +38,10 @@ const InfiniteScroll = () => {
             setPage((prevPage) => prevPage + 1);
         }
     };
+
+    const debouncedScroll = useDebounce(onScroll,200)
+
+
     return (
         <div>
 
