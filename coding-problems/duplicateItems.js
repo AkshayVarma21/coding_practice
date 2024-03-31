@@ -1,3 +1,5 @@
+// Find the duplicate items in an array and return the sorted list
+
 function getDuplicateElements(inputList) {
     const uniqueSet = new Set();
     const duplicateSet = new Set(); // New set to store duplicate elements
