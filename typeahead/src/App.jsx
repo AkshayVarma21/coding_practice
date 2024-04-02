@@ -2,6 +2,7 @@ import './App.css';
 import { useState } from 'react';
 import useDebounce from './custom-hooks/useDebounce';
 import Counter from './components/Counter';
+import InfiniteScroll from './components/InfiniteScroll';
 
 function App() {
 
@@ -21,7 +22,7 @@ function App() {
     const loadDataDebounced = useDebounce(loadData, 400)
     return (
         <div className="App">
-            <Counter />
+            {/* <Counter />
             <input type="text" onChange={(e) => loadDataDebounced(e)} className='inputType' />
             {data && data.length !== 0 &&
                 <div className="results-container">
@@ -30,7 +31,8 @@ function App() {
                             <p> {item.name} </p>
                         </div>
                     ))}
-                </div>}
+                </div>} */}
+                <InfiniteScroll/>
         </div>
     );
 }
