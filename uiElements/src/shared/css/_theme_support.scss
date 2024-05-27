@@ -1,0 +1,100 @@
+.btn-xs {
+    font-size: 0.8125rem !important;
+    padding: 0.125rem 0.5rem;
+    height: auto !important;
+}
+
+.menu-link-hoverable {
+    cursor: pointer;
+}
+
+.form-label-group select {
+    padding-top: 1.25rem;
+    padding-bottom: 0.25rem;
+    height: auto;
+}
+
+.selected-component {
+    font-weight: 600;
+    color: #346cb0 !important;
+}
+
+.content-expanded {
+    margin-left: 15rem;
+}
+
+.table-wrapper {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.table-background {
+    background-color: #ffffff;
+}
+
+.icon-wrapper {
+    padding-top: 8px;
+}
+
+.step-icon {
+    margin-top: 3px;
+}
+
+.calendarStyle {
+    width: 100% !important;
+}
+
+.tileClass {
+    color: white;
+    background-color: black !important;
+}
+
+.react-calendar__tile--active {
+    background-color: #006edc !important;
+    color: white;
+}
+
+.react-calendar__tile:disabled {
+    background-color: #f0f0f0 !important;
+    color: black;
+}
+
+.dropdown-menu.show {
+    top: auto !important;
+}
+
+.tileClassSpacing {
+    margin: 16px 0px !important;
+}
+
+.calendar-event {
+    color: #346cb0;
+    font-weight: 600;
+}
+
+.calendar-event-holiday {
+    color: red;
+    font-weight: 600;
+}
+
+.demo-dropdown-trigger {
+    width: 200px;
+    height: 30px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+}
+
+.demo-dropdown-tree {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    z-index: 1070;
+    display: block;
+    background-color: #fff;
+    width: 200px;
+
+    &-hidden {
+        display: none;
+    }
+}
